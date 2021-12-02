@@ -1,0 +1,173 @@
+body {
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+
+/* @media (max-width: 841px) {
+  body {
+    background-color: steelblue;
+  }
+}
+@media (max-width: 768px), (min-width: 900px) {
+  body {
+    background-color: springgreen;
+  }
+} */
+
+.container {
+  width: 980px;
+  margin: 0 auto; 
+  padding: .5rem;
+} 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+[class^="col"] {
+  font-size: 17px;
+  padding: 0 .5rem;
+}
+.col {
+  flex: 1 0 0;
+
+}
+.col-auto {
+  flex: 0 0 auto;
+}
+.col-1 {
+  flex: 0 0 8.33333333%;
+}
+.col-2 {
+  flex: 0 0 16.66666667%;
+}
+.col-3 {
+  flex: 0 0 25%;
+}
+.col-4 {
+  flex: 0 0 33.3333333%;
+}
+.col-5 {
+  flex: 0 0 41.66666667%;
+}
+.col-6 {
+  flex: 0 0 50%;
+}
+.col-7 {
+  flex: 0 0 58.333333333%;
+}
+.col-8 {
+  flex: 0 0 66.66666667%;
+}
+.col-9 {
+  flex: 0 0 75%;
+}
+.col-10 {
+  flex: 0 0 83.33333333%;
+}
+.col-11 {
+  flex: 0 0 96.66666667%;
+}
+.col-12 {
+  flex: 0 0 100%;
+}
+
+.grid-example {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.grid-example div {
+  padding: .5rem;
+  flex: 0 0 25%;
+}
+
+@media (max-width: 900px) {
+  .grid-example div {
+    flex: 0 0 33.3333333%;
+  }
+}
+@media (max-width: 780px) {
+  .grid-example div {
+    flex: 0 0 50%;
+  }
+}
+@media (max-width: 565px) {
+  .grid-example div {
+    flex: 0 0 100%;
+  }
+}
+
+.grid-example-2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.grid-example-2 div {
+  padding: .5rem;
+  flex: 0 0 100%;
+}
+
+
+@media (min-width: 565px) {
+  .grid-example-2 div {
+    flex: 0 0 50%;
+  }
+}
+@media (min-width: 780px) {
+  .grid-example-2 div {
+    flex: 0 0 33.3333333%;
+  }
+}
+@media (min-width: 900px) {
+  .grid-example-2 div {
+    flex: 0 0 25%;
+  }
+}
+
+article {
+  padding: .5rem;
+}
+article img {
+  padding: .3rem;
+  border: 1px solid lightblue;
+  width: 350px;
+  margin: .5rem;
+}
+img.left {
+  float: right;
+  margin-left: 10px;
+}
+img.right {
+  float: left;
+  margin-right: 10px;
+}
+article p {
+  font-size: 1.3rem;
+}
+
+@media (max-width: 900px) {
+  article img {
+    width: 300px;
+  }
+  article p {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 768px) {
+  article img {
+    width: 250px;
+  }
+  article p {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 565px) {
+  article img {
+    width: 100%;
+  }
+  article p {
+    font-size: 1rem;
+  }
+}
