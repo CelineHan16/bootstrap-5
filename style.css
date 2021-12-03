@@ -6,7 +6,7 @@ body {
 }
 
 .navbar {
-  padding: .75rem 0;
+  padding: 0.75rem 0;
   background-color: #7952b3;
 }
 .container {
@@ -14,20 +14,59 @@ body {
   justify-content: space-between;
   justify-content: start;
   align-items: center;
+  padding: 0 12px;
 }
 .navbar ul {
   display: flex;
   list-style-type: none;
+  margin: 0;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.85);
+  padding: 8px;
+  font-size: 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar ul li a:hover {
+  color: #fff;
+}
+.navbar ul.list li:first-child a {
+  color: #fff;
+  font-weight: 600;
 }
 .navbar .list {
   flex-grow: 1;
+  padding: 0;
 }
 .navbar .logo {
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 .navbar .logo svg {
-  margin-top: .25rem;
-  margin-bottom: .25rem;
+  margin-top: 0.25rem;
+  color: #fff;
+}
+.navbar .btn {
+  margin-left: 16px;
+  font-weight: 600;
+  background-color: transparent;
+  border: 1px solid #ffe484;
+  border-radius: .25rem;  
+  padding: .375rem .75rem;
+  text-decoration: none;
+  vertical-align: middle;
+  line-height: 1.5;
+  color: #ffe484;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.navbar .btn:hover {
+  background-color: #ffe484;
+  cursor: pointer;
+  color: black;
 }
 
 
@@ -102,13 +141,14 @@ body {
 .grid-example {
   display: flex;
   flex-wrap: wrap;
-
 }
-.grid-example div {
-  padding: .5rem;
-  flex: 0 0 25%;
+/* Responsive */
+.grid-example div  {
+  padding: 0.5rem;
+  flex: 1 0 240px;
 }
 
+/* Adaptive
 @media (max-width: 900px) {
   .grid-example div {
     flex: 0 0 33.3333333%;
@@ -123,17 +163,16 @@ body {
   .grid-example div {
     flex: 0 0 100%;
   }
-}
+} */
 
 .grid-example-2 {
   display: flex;
   flex-wrap: wrap;
 }
 .grid-example-2 div {
-  padding: .5rem;
+  padding: 0.5rem;
   flex: 0 0 100%;
 }
-
 
 @media (min-width: 565px) {
   .grid-example-2 div {
@@ -152,13 +191,13 @@ body {
 }
 
 article {
-  padding: .5rem;
+  padding: 0.5rem;
 }
 article img {
-  padding: .3rem;
+  padding: 0.3rem;
   border: 1px solid lightblue;
   width: 350px;
-  margin: .5rem;
+  margin: 0.5rem;
 }
 img.left {
   float: right;
