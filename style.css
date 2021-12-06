@@ -8,6 +8,8 @@ body {
 .navbar {
   padding: 0.75rem 0;
   background-color: #7952b3;
+  position: sticky;
+  top: 0;
 }
 .container {
   display: flex;
@@ -62,12 +64,41 @@ body {
   text-decoration: none;
   vertical-align: middle;
   cursor: pointer;
+  transition: all .15s;
 }
 .navbar .btn:hover {
   background-color: #ffe484;
   cursor: pointer;
-  color: black;
+  color: #212529;
 }
+.navbar .navbar-toggler {
+  width: 32;
+  height: 32;
+  fill: currentcolor;
+  color: rgba(255,255,255,.55);
+  border-color: rgba(255,255,255,.0);
+  border-radius: .25rem;
+  background-color: transparent;
+  vertical-align: middle;
+  line-height: 1;
+  padding: .25rem .75rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+  display: none;
+}
+@media (max-width: 768px) {
+  .navbar ul, .btn {
+    display: none;
+  }
+  .navbar .navbar-toggler {
+    display: inline-block;
+  }
+  .navbar .logo-wrapper {
+    flex: 1 0 0;
+  }
+}
+
+
 
 
 /* @media (max-width: 841px) {
